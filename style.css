@@ -80,3 +80,120 @@ img.placeholder {
   width: 200px;
   height: 150px;
   background-colo
+/* Reset i font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #fcd5ce, #f8edeb, #d5f4e6);
+  color: #333;
+  padding: 20px;
+}
+
+/* Navigacija */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.7);
+  color: #000;
+}
+
+/* Kartica sa sadržajem */
+.container {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 40px;
+  border-radius: 24px;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  margin-top: 20px;
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Naslov i podnaslov */
+h1 {
+  font-size: 48px;
+  color: #7d5ba6;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #a678d2;
+  margin: 20px 0 10px;
+}
+
+/* Paragraf */
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Slike */
+img {
+  max-width: 200px;
+  margin: 10px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Dugmad */
+button {
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  border: none;
+  padding: 12px 28px;
+  border-radius: 999px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Video i iframe */
+iframe, video {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+/* Animacija lebdenja */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
